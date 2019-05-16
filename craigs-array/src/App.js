@@ -1,29 +1,20 @@
-import React, { Component } from "react";
-import Header from "./components/Header";
-import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
-import friends from "./friends.json";
-import "./App.css";
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from './pages/Home';
+import Header from './components/Header';
+import './App.css';
 
-class App extends Component {
-  // Setting this.state.friends to the friends json array
-  state = {
-    
-  };
-
-  function = id => {
-    
-  };
-
-  // Map over this.state.friends and render a FriendCard component for each friend object
-  render() {
-    return (
-      <Wrapper>
-        <Header />
-        
-      </Wrapper>
-    );
-  }
-}
+const App = () => (
+  <Router>
+    <div>
+      <Header />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        {/* <Route exact path="/books" component={Books} />
+        <Route exact path="/books/:id" component={Detail} /> */}
+      </Switch>
+    </div>
+  </Router>
+);
 
 export default App;
