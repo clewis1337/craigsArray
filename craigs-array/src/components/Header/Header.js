@@ -9,7 +9,7 @@ import FormControl from 'react-bootstrap/FormControl';
 
 
 const Header = () => (
-
+  <div class="nav-wrapper">
   <Navbar bg="light" expand="lg">
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   
@@ -17,8 +17,8 @@ const Header = () => (
     <Navbar.Brand href="#home">
       <img
         src={require('../../images/logo.png')}
-        width="75"
-        height="90"
+        width="60"
+        height="75"
         className="d-inline-block align-top"
       />
     </Navbar.Brand>
@@ -34,7 +34,7 @@ const Header = () => (
     </Nav>
 
 </Navbar>
-
+</div>
 );
 
 export default Header;

@@ -1,11 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
 
-  
-.parallax-window { 
+nav{
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255, 1.00);
+    position: fixed;
+    height: 8%;
+    width: 100%;
+    display: block;
+}
+.nav-wrapper{
+    width: 95%;
+    max-width: 1200px;
+    min-width: 95%;
+    margin: auto;
+    height: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0px 125px 0 175px;
+}
+.nav-links{
+    position: relative;
+    display: inline-block;
+}
+
+nav ul li {
+    padding-top: 14px;
+    vertical-align: middle;
+    display: table-cell;
+    font-weight: 300;
+    padding: 15px 10px 15px 35px;
+}
+.desktop-nav{
+    visibility: visible;
+}
+.mobile-nav{
+    display: none;
+}
+
+.parallax-window{ 
     /* The image used */
     background-image: url("../../images/pizza-1-edited-web-safe.jpg");
   
     /* Full height */
-    min-height: 600px;
+    min-height: 700px;
     height: 100%; 
   
     /* Create the parallax scrolling effect */
@@ -13,8 +51,160 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    position: relative;
 }
 
-.name-container {
-    height: 50%;
+.name-container{
+    position: absolute;
+    height: 100px;
+    bottom: 10px;
+
 }
+.nameTitle{
+    padding: 0px 10px;
+    margin-left: 105px;
+    width: 230px;
+    background-color: rgba(239, 245, 245, 0.618);
+    border-radius: 15px 15px 0 0;
+}
+.nameTitleSub{
+    padding: 0px 10px;
+    margin-top: -8px;
+    margin-left: 105px;
+    width: 580px;
+    background-color: rgba(239, 245, 245, 0.618);
+    border-radius: 0 15px 15px 15px;
+}
+.lfm__typing_effect{
+    position: relative;
+    display: inline-block;
+}
+
+#arrayChange{
+    display: inline;
+}
+
+.intro-wrapper{
+    padding: 55px 10em 10em 55px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #eee;
+}
+
+.skill-wrapper{
+    padding: 55px 10em 10em 55px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    background-color: #ddd;
+}
+
+.skill-header{
+    text-align: left;
+    font-family: 'Hind', sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+.skill-box{
+    padding-top: 40px;
+    text-align: center;
+    height: 6.5em;
+}
+
+.skill{
+    border-style: solid;
+    border-width: 2px;
+}
+
+.middle-col{
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
+.middle-row{
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+}
+
+.project-header{
+    font-family: 'Hind', sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+    background-color: #eee;
+}
+.project-wrapper{
+    padding: 55px 10em 10em 55px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    background-color: #eee;
+}
+
+.contact-wrapper{
+    padding: 55px 10em 10em 55px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    background-color: #ddd;
+}
+
+.contact-header{
+    font-family: 'Hind', sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+.contact-box{
+    height: 2.5em;
+}
+
+.anchor{
+    position: absolute;
+    margin-top: -50px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    .mobile-nav{
+        top: 0;
+        left: 0;
+        background: rgba(255,255,255, 1.00);
+        position: fixed;
+        height: 8%;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .desktop-nav{
+        display: none;
+    }
+    .parallax-window{       
+        /* Create the parallax scrolling effect */
+        background: url("../../images/pizza-mobile.jpg");
+        background-repeat: no-repeat;
+        width: 600px;
+        background-size: 600px;
+
+    }
+    .name-container{
+        position: absolute;
+        height: 100px;
+        bottom: 80px;
+    
+    }
+    .nameTitle{
+        padding: 0px 10px;
+        margin-left: 25px;
+        width: 230px;
+        background-color: rgba(239, 245, 245, 0.618);
+        border-radius: 15px 15px 0 0;
+    }
+    .nameTitleSub{
+        padding: 0px 10px;
+        margin-top: -8px;
+        margin-left: 25px;
+        width: 550px;
+        background-color: rgba(239, 245, 245, 0.618);
+        border-radius: 0 15px 15px 15px;
+    }
+
+  }
