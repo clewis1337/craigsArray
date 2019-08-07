@@ -3,7 +3,7 @@ import ReactTypingEffect from 'react-typing-effect';
 import './home.css'
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBCollapse, MDBContainer,
   MDBHamburgerToggler } from 'mdbreact';
-import Title from '../../components/Title';
+// import Title from '../../components/Title';
 
 class Home extends Component {
   state = {
