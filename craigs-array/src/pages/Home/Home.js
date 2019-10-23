@@ -25,7 +25,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-    
+        
         <div id="home" class="parallax-window">
           <div class="name-container">
             <h1 class="nameTitle">Craig Lewis</h1>
@@ -76,7 +76,7 @@ class Home extends Component {
           </MDBNavbarBrand>
           <MDBHamburgerToggler color="#d3531a" id="hamburger1" onClick={()=> this.toggleSingleCollapse('collapse1')} />
             <MDBCollapse isOpen={this.state.collapse1} navbar>
-              <MDBNavbarNav left>
+              <MDBNavbarNav left className="collapse-menu">
                 <MDBNavItem active>
                   <MDBNavLink to="#!">Home</MDBNavLink>
                 </MDBNavItem>

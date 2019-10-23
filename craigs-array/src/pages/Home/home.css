@@ -170,9 +170,13 @@ nav ul li {
         background: rgba(255,255,255, 1.00);
         position: fixed;
         height: 8%;
-        width: 100%;
+        width: 100vw;
         display: block;
         margin: auto;
+        padding-bottom: 10px;
+    }
+    .collapse-menu{
+        background-color: white;
     }
     .desktop-nav{
         display: none;
@@ -181,20 +185,22 @@ nav ul li {
         /* Create the parallax scrolling effect */
         background: url("../../images/pizza-mobile.jpg");
         background-repeat: no-repeat;
-        width: 600px;
-        background-size: 600px;
+        width: 100%;
+        background-size: 700px;
 
     }
     .name-container{
         position: absolute;
         height: 100px;
         bottom: 80px;
+        width: 100%;
     
     }
     .nameTitle{
         padding: 0px 10px;
         margin-left: 25px;
-        width: 230px;
+        width: 250px;
+        font-size: 2.5em;
         background-color: rgba(239, 245, 245, 0.618);
         border-radius: 15px 15px 0 0;
     }
@@ -202,9 +208,45 @@ nav ul li {
         padding: 0px 10px;
         margin-top: -8px;
         margin-left: 25px;
-        width: 550px;
+        width: 350px;
+        font-size: 1.5em;
         background-color: rgba(239, 245, 245, 0.618);
         border-radius: 0 15px 15px 15px;
     }
+    .intro-wrapper{
+        width: 411px;
+        padding: 55px 1em 1em 55px;
+    }
+    .skill-wrapper{
+        padding: 0;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .skill-header{
+        margin-left: 100px;
+        margin-right: 200px;
+    }
+    .skill-box{
+        flex: 1;
+        min-width: 105px;
+    }
+    .skill{
+        border-style: solid !important;
+        border-width: 2px;
+    }
+    
+    .middle-col{
+    border-left: 1 !important;
+    border-right: 1 !important;
+    }
+    .middle-row{
+    border-top: 1 !important;
+    border-bottom: 1 !important;
+    }
+    .contact-wrapper{
+        padding: 0;
+    }
+
+
 
   }
